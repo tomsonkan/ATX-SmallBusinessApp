@@ -21,16 +21,17 @@ onChange = e => {
     isClicked: !this.state.isClicked
   });
 
-  // this.search(value)
+  // this.search(value) ---- don't need since this displays lists before clicking button
 }
 
+//handleClick function for Author
 handleClick = (e) => {
   e.preventDefault()
   this.search(this.state.query)
   }
 
 
-
+//search function for Author data
 search = query => {
   let url = `https://hn.algolia.com/api/v1/search?query=${query}`
   let token = {}
@@ -46,12 +47,15 @@ search = query => {
     })
 }
 
+
+//handleClick function for Date
 handleClick2 = (e) => {
     e.preventDefault()
     this.search2(this.state.query)
     console.log("***YAY***")
   }
 
+//search2 function for Date
 search2 = query => {
   let url = `https://hn.algolia.com/api/v1/search?numericFilters=created_at_i>=${query}`
   let token = {}
@@ -68,6 +72,7 @@ search2 = query => {
     console.log("***YAY2***")
 }
 
+//don't need since this since it mounts data before clicking "submit" button
 // componentDidMount() {
 //   this.search("")
 // }
@@ -101,7 +106,8 @@ search2 = query => {
           <ul key={hits.title}>
             <li>TITLE : {hits.title}</li>
             <li>AUTHOR : {hits.author}</li>
-            <li>CREATED AT: {hits.created_at}</li>
+            <li>CREATED AT: {hits.created_at_i}</li>
+            <li>POINTS: {hits.points}</li>
           </ul>
           <p>{hits.url}</p>
           </> 
