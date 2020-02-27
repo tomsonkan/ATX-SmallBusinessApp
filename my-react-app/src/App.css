@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.lnk {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.lnk:hover {
+  color: rgb(99, 46, 46);
+  text-decoration: underline;
+}
+
+.Mark {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  color: blue;
+}
+
+.Mark:hover {
+  color: rgb(99, 46, 46);
+  font-weight: bold;
+  text-decoration: underline;
+}
