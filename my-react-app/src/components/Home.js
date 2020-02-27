@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Home = (props) => {
-  const classes = useStyles();
+//   const classes = useStyles();
   console.log(props.user)
   return (
 

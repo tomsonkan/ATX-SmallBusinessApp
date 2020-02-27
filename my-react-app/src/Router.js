@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {Switch, Route, Redirect} from 'react-router'
 import Home from './containers/Home'
-import HomeSecure from './containers/HomeSecure'
 import Login from './components/Login'
 import Restaurant from './containers/Restaurant'
 import cookie from 'cookie'

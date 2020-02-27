@@ -2,9 +2,7 @@ import React from 'react'
 import { AppBar, 
     Toolbar, 
     IconButton, 
-    Typography,
-    FormGroup,
-    FormControlLabel
+    Typography
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import { Link } from 'react-router-dom'

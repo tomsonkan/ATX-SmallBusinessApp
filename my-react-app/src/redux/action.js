@@ -1,5 +1,3 @@
-const url = "https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/car?format=json"
-
 export const login = () => {
     return {
         type: 'LOG_IN',
