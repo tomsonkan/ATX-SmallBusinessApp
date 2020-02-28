@@ -47,13 +47,13 @@ class AddBus extends Component {
     return (
         <Fragment>
             <div style={{ textAlign: 'center' }}>
-                <h1>Add Business:</h1>
+                <h1>WANT TO ADD MORE BUSINESSES?</h1>
                 <Button
                     variant="contained"
                     className="add-bus"
                     onClick={this.toggleDialog}
                 >
-                    Add Business
+                    Yes I do!!
                 </Button>
             </div>
             <div>

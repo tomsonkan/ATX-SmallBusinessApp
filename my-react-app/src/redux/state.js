@@ -1,6 +1,6 @@
 export default {
   user: {
-      username: 'username',
+      username: 'testuser',
       email: 'test-user@example.com',
       loggedIn: false
   },

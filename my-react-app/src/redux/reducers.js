@@ -1,23 +1,7 @@
 import { combineReducers } from 'redux'
 
 
-const user = (state = [], action) => {
-    switch(action.type){
-        case "LOG_IN":
-            return {
-                ...action.value,
-                loggedIn: true
-            };
-        case "LOG_OUT":
-            return {
-                ...state,
-                loggedIn: false
-            }
-        default:
-            return user
-    }
-}
-
+const user = (state = null) => state
 
 const cars = (state = [], action) => {
     switch(action.type) {
@@ -34,3 +18,21 @@ const cars = (state = [], action) => {
 }
 
 export default combineReducers({ user, cars })
+
+
+// const user = (state = [], action) => {
+//     switch(action.type){
+//         case "LOG_IN":
+//             return {
+//                 ...action.value,
+//                 loggedIn: true
+//             };
+//         case "LOG_OUT":
+//             return {
+//                 ...state,
+//                 loggedIn: false
+//             }
+//         default:
+//             return user
+//     }
+// }

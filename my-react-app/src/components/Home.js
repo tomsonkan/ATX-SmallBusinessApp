@@ -18,15 +18,15 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Home = (props) => {
-//   const classes = useStyles();
-  console.log(props.user)
+  const classes = useStyles();
+  console.log(props.user.username)
   return (
 
     
-    <Container maxWidth="lg" className="car-container" style={{marginTop:"70px"}}>
+    <Container maxWidth="lg" className="car-container" style={{marginTop:"70px", marginBottom:"70px"}}>
             {document.cookie == "loggedIn=true" ? ( 
             <Container>
-            <h4>Welcome, {props.username}</h4>
+            <h4>Welcome, {props.user.username}</h4>
             <div className = "flex-container">
             <AddBus busTotal={props.cars.length} />
             </div>
