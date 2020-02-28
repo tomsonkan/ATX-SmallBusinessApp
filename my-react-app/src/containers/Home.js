@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import Home from '../components/Home'
-import {fetchMakes, removeBus, addBus} from '../redux/action'
+import { removeBus, addBus} from '../redux/action'
 
 const mapStateToProps = state => {
   return {
@@ -11,7 +11,6 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return{
-    fetchMakes: index => dispatch(fetchMakes(index)),
     removeBus: index => dispatch(removeBus(index)),
     addBus: () => dispatch(addBus())    
   }
